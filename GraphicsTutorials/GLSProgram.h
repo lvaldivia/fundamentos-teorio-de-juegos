@@ -1,29 +1,30 @@
 #pragma once
-
+#include <iostream>
 #include <string>
 
 using namespace std;
 
-class GLSProgram{
-
+class GLSProgram
+{
 public:
 	GLSProgram();
 	~GLSProgram();
 
-	void compilaShader(const string& vertexShaderFilepath, 
-						const string& fragmentShaderFilePath);
+	void use() {
 
-	void linkShaders();
+	}
 
-	void addAtribute(const string atribute);
+	void unuse() {
 
-	void use();
+	}
 
-	void unuse();
+	void compilaShader(const string& vertexShaderFilepath,
+		const string& fragmentShaderFilePath) {
 
-private:
-	unsigned int _programID;
-	unsigned int _vertexShaderID;
-	unsigned int _fragmentShaderID;
-	int _numAtributes;
-}
+	}
+
+	void linkShaders() {
+
+	}
+};
+

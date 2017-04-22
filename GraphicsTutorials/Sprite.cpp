@@ -20,8 +20,9 @@ void Sprite::draw(){
 }
 
 Sprite::~Sprite(){
-	if(_vboID! = 0){
+	if(_vboID != 0){
 		//TO-DO
 		//delete buffers
 	}
 }
+

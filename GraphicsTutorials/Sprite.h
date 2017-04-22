@@ -1,17 +1,17 @@
 #pragma once
-
-class Sprite{
-
-public:
-	Sprite();
-	void init(float x, float y, int width, int height);
-	void draw();
-	~Sprite();
-
+class Sprite
+{
 private:
-	float _x;
-	float _y;
 	int _width;
 	int _height;
+	float _x;
+	float _y;
 	unsigned int _vboID;
-}
+	void init(float x, float y, int width, int height);
+	void draw();
+public:
+
+	Sprite();
+	~Sprite();
+};
+

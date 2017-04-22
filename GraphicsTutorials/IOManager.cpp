@@ -23,7 +23,7 @@ bool IOManager::readFileToBuffer(string filepath,
 	buffer.resize(filesize);
 
 	file.seekg(0, ios::beg);
-	file.read(&buffer,filesize);
+	file.read((char *)&buffer,filesize);
 	file.close();
 
 	return true;

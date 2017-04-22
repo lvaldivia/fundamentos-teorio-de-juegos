@@ -1,4 +1,5 @@
 #pragma once
+#include <GL/glew.h>
 class Sprite
 {
 private:
@@ -7,10 +8,10 @@ private:
 	float _x;
 	float _y;
 	unsigned int _vboID;
+	
+public:
 	void init(float x, float y, int width, int height);
 	void draw();
-public:
-
 	Sprite();
 	~Sprite();
 };
